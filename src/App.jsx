@@ -1,22 +1,21 @@
-import * as React from "react";
-import CssBaseline from "@mui/material/CssBaseline";
-import Grid from "@mui/material/Grid";
-import Container from "@mui/material/Container";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { Route, Switch, Link } from "react-router-dom";
-import Home from "./Home";
-import About from "./about";
-import Contact from "./contact";
-import Register from "./register";
-import Comments from "./Comments";
-import Post from "./posts";
+import * as React from 'react'
+import CssBaseline from '@mui/material/CssBaseline'
+import Grid from '@mui/material/Grid'
+import Container from '@mui/material/Container'
+import {createTheme, ThemeProvider} from '@mui/material/styles'
+import {Route, Switch, Link} from 'react-router-dom'
+import Home from './Home'
+import About from './about'
+import Contact from './contact'
+import Register from './register'
+import Comments from './Comments'
+import Post from './posts'
 
-const theme = createTheme();
+const theme = createTheme()
 function App() {
   return (
-    <div style={{ display: "flex", height: "100vh", alignItems: "stretch" }}>
-      <h1>my message</h1>
-      <div style={{ width: 200, backgroundColor: "#f2f2f2" }}>
+    <div style={{display: 'flex', height: '100vh', alignItems: 'stretch'}}>
+      <div style={{width: 200, backgroundColor: '#f2f2f2'}}>
         <ul>
           <li>
             <Link to="/">Post</Link>
@@ -43,7 +42,7 @@ function App() {
         </Switch>
       </div>
     </div>
-  );
+  )
   {
     /*<ThemeProvider theme={theme}>
       <CssBaseline />
@@ -60,4 +59,4 @@ function App() {
   }
 }
 
-export default App;
+export default App
